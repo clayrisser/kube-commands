@@ -2,7 +2,7 @@ FROM alpine:edge
 
 WORKDIR /tmp
 
-ENV PATH="${PATH}:${HOME}/.krew/bin"
+ENV PATH="${PATH}:/root/.krew/bin"
 
 RUN apk add --no-cache \
       bash \
